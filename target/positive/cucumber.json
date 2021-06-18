@@ -1,0 +1,490 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 39296760622,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the Home Page \"https://www.carsguide.com.au\" of CarsGuide Website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.carsguide.com.au",
+                  "offset": 23
+                }
+              ],
+              "location": "SearchcarSteps.i_am_on_the_Home_Page_of_CarsGuide_Website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5761248041,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I move to Car For Sale Menu",
+            "match": {
+              "location": "SearchcarSteps.i_move_to_Car_For_Sale_Menu(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "buy + Sell"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Search cars"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9991568662,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate Search Cars Page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working.;validate-search-cars-page",
+        "after": [
+          {
+            "result": {
+              "duration": 12639254555,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10742716708,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "click on \"Search Cars\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search Cars",
+                  "offset": 10
+                }
+              ],
+              "location": "SearchcarSteps.click_on_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4025073075,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "select carbrand as \"BMW\" from AnyMake dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BMW",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchcarSteps.select_carbrand_as_from_AnyMake_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 538952533,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "select \"1 Series\" as car model",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 Series",
+                  "offset": 8
+                }
+              ],
+              "location": "SearchcarSteps.select_as_car_model(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 316058490,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "select location as \"ACT - All\" from SelectLocation dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ACT - All",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchcarSteps.select_location_as_from_SelectLocation_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 328291709,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "select \"$1,000\" as price",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$1,000",
+                  "offset": 8
+                }
+              ],
+              "location": "SearchcarSteps.select_as_price(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10947898351,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "click on Find_My_Next_Car button",
+            "match": {
+              "location": "SearchcarSteps.click_on_Find_My_Next_Car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 244168,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I should see list of searched cars",
+            "match": {
+              "location": "SearchcarSteps.i_should_see_list_of_searched_cars()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2405032657,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the page title should be \"Bmw 1 Series Under 1000 for Sale ACT | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bmw 1 Series Under 1000 for Sale ACT | carsguide",
+                  "offset": 26
+                }
+              ],
+              "location": "SearchcarSteps.the_page_title_should_be(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@Search-Cars-Positive"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17834914209,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the Home Page \"https://www.carsguide.com.au\" of CarsGuide Website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.carsguide.com.au",
+                  "offset": 23
+                }
+              ],
+              "location": "SearchcarSteps.i_am_on_the_Home_Page_of_CarsGuide_Website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1426828919,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I move to Car For Sale Menu",
+            "match": {
+              "location": "SearchcarSteps.i_move_to_Car_For_Sale_Menu(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "buy + Sell"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Search cars"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4452642598,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Validate used Cars Page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working.;validate-used-cars-page",
+        "after": [
+          {
+            "result": {
+              "duration": 25091473642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1297838308,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "click on \"Used Cars\" link on Used car page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Used Cars",
+                  "offset": 10
+                }
+              ],
+              "location": "UsedCarSteps.click_on_link_on_Used_car_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3352393516,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "select carbrand as \"Kia\" from AnyMake dropdown on Used car page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kia",
+                  "offset": 20
+                }
+              ],
+              "location": "UsedCarSteps.select_carbrand_as_from_AnyMake_dropdown_on_Used_car_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6098402162,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "select car model on Used car page",
+            "match": {
+              "location": "UsedCarSteps.select_car_model_on_Used_car_page(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "car model"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "Carnival"
+                ],
+                "line": 31
+              },
+              {
+                "cells": [
+                  "Cerato"
+                ],
+                "line": 32
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 458491272,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "select location as \"ACT - All\" from SelectLocation dropdown on Used car page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ACT - All",
+                  "offset": 20
+                }
+              ],
+              "location": "UsedCarSteps.select_location_as_from_SelectLocation_dropdown_on_Used_car_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 435581131,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "select \"$2,000\" as price on Used car page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$2,000",
+                  "offset": 8
+                }
+              ],
+              "location": "UsedCarSteps.select_as_price_on_Used_car_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12288699317,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "click on Find_My_Next_Car button on Used car page",
+            "match": {
+              "location": "UsedCarSteps.click_on_Find_My_Next_Car_button_on_Used_car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 361929,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I should see list of searched cars on Used car page",
+            "match": {
+              "location": "UsedCarSteps.i_should_see_list_of_searched_cars_on_Used_car_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 528041167,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the page title should be \"Used Kia Carnival Under 2000 for Sale ACT | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Used Kia Carnival Under 2000 for Sale ACT | carsguide",
+                  "offset": 26
+                }
+              ],
+              "location": "SearchcarSteps.the_page_title_should_be(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@Used-Cars"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing to validate Search Cars Page is working.",
+    "description": "In order to validate that \r\nthe Search Cars page is working\r\nDoing the Acceptance Testing",
+    "id": "acceptance-testing-to-validate-search-cars-page-is-working.",
+    "keyword": "Feature",
+    "uri": "CarGuide.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Search-Cars"
+      }
+    ]
+  }
+]
