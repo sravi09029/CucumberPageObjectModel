@@ -7,3 +7,4 @@ pages\locators\SearchCarsPageLocators.class
 pages\Actions\CarGuideHomePageActions.class
 utiles\SeleniumDriver.class
 pages\Actions\SearchCarsPageActions.class
+utiles\SeleniumHelper.class

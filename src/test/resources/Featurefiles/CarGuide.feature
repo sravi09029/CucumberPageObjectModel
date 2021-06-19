@@ -1,18 +1,14 @@
-@Search-Cars
-Feature: Acceptance testing to validate Search Cars Page is working.
+Feature: Acceptance testing to chrck
   In order to validate that 
-  the Search Cars page is working
-  Doing the Acceptance Testing
+  the doing Acceptance Testing
 
-  Background: 
+  @Search-Cars
+  Scenario: Validate Search Cars Page
     Given I am on the Home Page "https://www.carsguide.com.au" of CarsGuide Website
     When I move to Car For Sale Menu
       | Menu        |
       | buy + Sell  |
       | Search cars |
-
-  @Search-Cars-Positive
-  Scenario: Validate Search Cars Page
     And click on "Search Cars" link
     And select carbrand as "BMW" from AnyMake dropdown
     And select "1 Series" as car model
@@ -22,8 +18,13 @@ Feature: Acceptance testing to validate Search Cars Page is working.
     Then I should see list of searched cars
     And the page title should be "Bmw 1 Series Under 1000 for Sale ACT | carsguide"
 
-		@Used-Cars
-    Scenario: Validate used Cars Page
+  @Used-Cars
+  Scenario: Validate used Cars Page
+    Given I am on the Home Page "https://www.carsguide.com.au" of CarsGuide Website
+    When I move to Car For Sale Menu
+      | Menu        |
+      | buy + Sell  |
+      | Search cars |
     And click on "Used Cars" link on Used car page
     And select carbrand as "Kia" from AnyMake dropdown on Used car page
     And select car model on Used car page

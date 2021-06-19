@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="174.294" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="4.803" tests="4" errors="0" skipped="2" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tag @Search-Cars,@Used-Cars"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
     <property name="java.vm.version" value="25.161-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
@@ -26,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="G:\CoadingPrograms\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2036580366555696135.tmp"/>
+    <property name="classworlds.conf" value="G:\CoadingPrograms\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3580462158518556455.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/lib/amd64;C:\Users\RC\AppData\Local\Programs\Python\Python37;C:\Program Files\Java\jdk1.8.0_161\bin;E:\softwares\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin\bin;C:\Program Files\Java\jdk1.8.0_161\bin;\bin;C:\Users\RC\AppData\Local\Programs\Python\Python37;G:\eclipse-java-photon-R-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -43,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test -Dcucumber.options=--tag @Search-Cars,@Used-Cars"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,5 +61,128 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="feature" classname="runner.RunCuke" time="174.294"/>
+  <testcase name="setUpClass" classname="runner.RunCuke" time="2.392">
+    <failure message="Unknown option: --tag" type="cucumber.runtime.CucumberException"><![CDATA[cucumber.runtime.CucumberException: Unknown option: --tag
+	at cucumber.runtime.RuntimeOptions.parse(RuntimeOptions.java:148)
+	at cucumber.runtime.RuntimeOptions.<init>(RuntimeOptions.java:89)
+	at cucumber.runtime.RuntimeOptions.<init>(RuntimeOptions.java:78)
+	at cucumber.runtime.RuntimeOptions.<init>(RuntimeOptions.java:70)
+	at cucumber.runtime.RuntimeOptionsFactory.create(RuntimeOptionsFactory.java:25)
+	at cucumber.api.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:37)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+Usage: java cucumber.api.cli.Main [options] [[[FILE|DIR][:LINE[:LINE]*] ]+ | @FILE ]
+
+Options:
+
+  -g, --glue PATH                        Where glue code (step definitions, hooks
+                                         and plugins) are loaded from.
+  -p, --[add-]plugin PLUGIN[:PATH_OR_URL]
+                                         Register a plugin.
+                                         Built-in formatter PLUGIN types: junit,
+                                         html, pretty, progress, json, usage, rerun,
+                                         testng. Built-in summary PLUGIN types:
+                                         default_summary, null_summary. PLUGIN can
+                                         also be a fully qualified class name, allowing
+                                         registration of 3rd party plugins.
+                                         --add-plugin does not clobber plugins of that 
+                                         type defined from a different source.
+  -f, --format FORMAT[:PATH_OR_URL]      Deprecated. Use --plugin instead.
+  -t, --tags TAG_EXPRESSION              Only run scenarios tagged with tags matching
+                                         TAG_EXPRESSION.
+  -n, --name REGEXP                      Only run scenarios whose names match REGEXP.
+  -d, --[no-]-dry-run                    Skip execution of glue code.
+  -m, --[no-]-monochrome                 Don't colour terminal output.
+  -s, --[no-]-strict                     Treat undefined and pending steps as errors.
+      --snippets [underscore|camelcase]  Naming convention for generated snippets.
+                                         Defaults to underscore.
+  -v, --version                          Print version.
+  -h, --help                             You're looking at it.
+  --i18n LANG                            List keywords for in a particular language
+                                         Run with "--i18n help" to see all languages
+  --junit,OPTION[,OPTION]*               Pass the OPTION(s) to the JUnit module.
+                                         Use --junit,-h or --junit,--help to print the
+                                         options of the JUnit module.
+
+Feature path examples:
+  <path>                                 Load the files with the extension ".feature"
+                                         for the directory <path>
+                                         and its sub directories.
+  <path>/<name>.feature                  Load the feature file <path>/<name>.feature
+                                         from the file system.
+  classpath:<path>/<name>.feature        Load the feature file <path>/<name>.feature
+                                         from the classpath.
+  <path>/<name>.feature:3:9              Load the scenarios on line 3 and line 9 in
+                                         the file <path>/<name>.feature.
+  @<path>/<file>                         Parse <path>/<file> for feature paths generated
+                                         by the rerun formatter.
+
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="runner.RunCuke" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="feature" classname="runner.RunCuke" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDownClass" classname="runner.RunCuke" time="2.411">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at cucumber.api.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:232)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</failure>
+  </testcase>
 </testsuite>

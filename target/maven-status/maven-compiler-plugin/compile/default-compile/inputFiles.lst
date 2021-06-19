@@ -3,6 +3,7 @@ G:\CoadingPrograms\cucumberPageObject\src\main\java\pages\locators\SearchCarsPag
 G:\CoadingPrograms\cucumberPageObject\src\main\java\pages\locators\CarGuideHomePageLocators.java
 G:\CoadingPrograms\cucumberPageObject\src\main\java\pages\locators\FindaDealerCarPageLocators.java
 G:\CoadingPrograms\cucumberPageObject\src\main\java\utiles\SeleniumDriver.java
+G:\CoadingPrograms\cucumberPageObject\src\main\java\utiles\SeleniumHelper.java
 G:\CoadingPrograms\cucumberPageObject\src\main\java\pages\Actions\SearchCarsPageActions.java
 G:\CoadingPrograms\cucumberPageObject\src\main\java\pages\locators\UsedCarPageLocators.java
 G:\CoadingPrograms\cucumberPageObject\src\main\java\pages\Actions\CarGuideHomePageActions.java

@@ -17,7 +17,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(features = {"src\\test\\resources\\Featurefiles"},
 							glue = {"steps"},
-							plugin = {"json:target/positive/cucumber.json","pretty", "html:target/RunCuke/cucumber.html","com.cucumber.listener.ExtentCucumberFormatter"},
+							plugin = {"json:target/RunCuke/cucumber.json","pretty", "html:target/RunCuke/cucumber.html","com.cucumber.listener.ExtentCucumberFormatter"},
 							monochrome = true
 							)
 public class RunCuke extends AbstractTestNGCucumberTests{
