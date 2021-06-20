@@ -1,6 +1,22 @@
-Feature: Acceptance testing to chrck
+Feature: Acceptance testing to check
   In order to validate that 
   the doing Acceptance Testing
+
+  @Registration-Cars
+  Scenario Outline: validate the Registration with valid gmail
+    Given I am on the Home Page "https://www.carsguide.com.au" of CarsGuide Website
+    When I move to sign in/sighn up
+    And click on sign in button
+    And Enter the "<Gmail>" on sign up page
+    And Enter the "<Password>" on sign up page
+    And Enter the "<FirstName>" on sign up page
+    And Enter the "<LastName>" on sign up page
+    And click on sign up button
+
+    Examples: 
+      | Gmail                  | Password  | FirstName | LastName |
+      | srks9441@gmail.com     | ravi09029 | Ravi      | Kumar    |
+      | selenium9441@gmail.com | ravi09029 | Raveendra | Kumar    |
 
   @Search-Cars
   Scenario: Validate Search Cars Page
